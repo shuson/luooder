@@ -13,7 +13,7 @@ MP3_URL = "http://luoo-mp3.kssws.ks-cdn.com/low/luoo/radio{}/{}.mp3"
 
 TRACK_NAME = "{} -{}.mp3"
 
-proxies = {'http':'13.131.1.241:8000'}
+proxies = {}
 
 def full2half(uc):
     """convert full-width character to half-width one
