@@ -27,6 +27,7 @@ def get_song_list(volumn):
     bs = BeautifulSoup(r.content, 'html.parser')
     songs = bs.find_all('div', 'player-wrapper')
 
+    print "song list of volumn {}".format(volumn)
     result = []
     for song in songs:
         meta = {}
@@ -46,13 +47,14 @@ def download_songs(volumn):
     if not os.path.exists(str(volumn)):
         os.makedirs(str(volumn))
         os.chdir(str(volumn))
-
+        
     print 'downloading...'
     index = 0
     for song in songs:
         index += 1
         track = '%02d' % index
         r = requests.get(MP3_URL.format(volumn,track), stream=True, proxies=proxies)
+        r.encoding = 'utf-8'
         track_name = TRACK_NAME.format(song['name'], song['artist'])
         with open(track_name, 'wb') as fd:
             for chunk in r.iter_content():
