@@ -14,3 +14,7 @@ __TODO__
 1. use ```songdetails``` to add song metadata
 2. add multi-thread downloading support
 3. more todos
+
+
+__Known Issue__
+1. Some albums are not accessible via this tool [#1](https://github.com/shuson/luooder/issues/1)
