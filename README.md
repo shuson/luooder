@@ -1,6 +1,7 @@
 # luooder
 a song downloader from luoo.net built with python
 
+> note: python 2.7 is required
 ## how to use it
 1. make sure [requests](http://docs.python-requests.org/en/latest/) and [beautifulsoup](http://www.crummy.com/software/BeautifulSoup/) are installed ```pip install beautifulsoup4 pip install requests ```
 2. ```python luooder.py``` and follow the instruction
