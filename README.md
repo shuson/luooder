@@ -1,4 +1,4 @@
-# luooder
+# luooder lol
 a song downloader from luoo.net built with python
 
 > note: python 2.7 is required
